@@ -1,0 +1,148 @@
+@import url('model.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    color: #fefefe;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.container__section {
+    gap: 2.3rem;
+    padding: 2rem;
+    width: 50%;
+}
+
+.container__title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container__subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container__input {
+    background: #000000;
+    color: #fefefe;
+    border: 2px solid #fefefe;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.container__button {
+    border: none;
+    border-radius: 0.5rem;
+    color: #fefefe;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.6rem 2rem;
+}
+
+.container__button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.container__button-blue {
+    background: #023f91;
+}
+
+.container__button-gray {
+    background: #2e2e2e;
+}
+
+.container__button-orange {
+    background: #FF4500FF;
+}
+
+.container__messages {
+    gap: 2rem;
+}
+
+.container__message {
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.6rem 2rem;
+}
+
+.container__message-danger {
+    background: #ec0505;
+    animation-name: animationShowMessageError;
+    animation-duration: 1s;
+}
+
+.container__message-success {
+    background: #0e6e0e;
+}
+
+.container__emphasis {
+    color: #0766ed;
+    font-weight: bold;
+}
+
+.container__image {
+    border: 0.4rem solid #023f91;
+}
+
+.container__image-opacity {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.container__tag {
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+@keyframes animationShowMessageError {
+    to {
+        width: 600px;
+    }
+
+    from {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container__section {
+        border-bottom: 0.4rem solid #2e2e2e;
+        padding: 2rem 0;
+        width: 100%;
+    }
+}
