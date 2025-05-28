@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafios de Lógica | Sorteador de números</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/Z6xHL1hb/imagem-ponto-interrogacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="../project-base/css/style.css">
+</head>
+<body>
+    <main class="container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Sorteador de Números</h1>
+
+            <div class="container__group model__vertical">
+                <div class="container__layer">
+                    <select id="type-default" name="type-default" class="container__input">
+                        <option value="1">Padrão</option>
+                        <option value="2">Pares</option>
+                        <option value="3">Ímpares</option>
+                    </select>
+                </div>
+
+                <div class="container__layer">
+                    <input type="number" id="number-min" name="number-max" placeholder="Número mínimo" class="container__input"/>
+                </div>
+
+                <div class="container__layer">
+                    <input type="number" id="number-max" name="number-max" placeholder="Número máximo" class="container__input"/>
+                </div>
+
+                <div class="container__layer">
+                    <input type="number" id="number-quantity" name="number-quantity" placeholder="Quantidade" class="container__input"/>
+                </div>
+            </div>
+
+            <div class="container__buttons model__horizontal model__center model__break">
+                <button onclick="drawNumber()" id="button-draw-number" class="container__button container__button-blue">Sortear</button>
+                <button onclick="restartGame()" id="button-restart" class="container__button container__button-gray" disabled>Reiniciar</button>
+            </div>
+
+            <div class="container__messages model__vertical model__center" id="element-message-alert"></div>
+        </section>
+
+        <section class="container__section model__vertical model__center">
+            <h2 class="container__subtitle">Observar todos os números</h2>
+
+            <ul class="model__horizontal model__center model__break" id="element-all-numbers"></ul>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
