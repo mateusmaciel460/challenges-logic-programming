@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafios de Lógica | Aluguel de jogos</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/Z6xHL1hb/imagem-ponto-interrogacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="../project-base/css/style.css">
+    <style>
+        .container__section {
+            width: 100%;
+        }
+
+        .container__group {
+            gap: 3rem;
+        }
+
+        .container__button {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .container__section {
+                border: none;
+            }
+
+            .container__layer {
+                border-bottom: 0.4rem solid #2e2e2e;
+                padding: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Aluguel de jogos</h1>
+            <p class="container__text">
+                Total de jogos alugados:
+                <span class="container__emphasis" id="element-total-rent">0</span>
+            </p>
+
+            <div class="container__group model__horizontal model__break model__center" id="element-list-games"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
