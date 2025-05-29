@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafios de Lógica | Amigo Secreto</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/Z6xHL1hb/imagem-ponto-interrogacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="../project-base/css/style.css">
+    <style>
+        .friend__message .container__message-danger {
+            animation: none;
+        }
+
+        .friend-secret .model__box {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .friend-secret .model__box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="friend-secret container model__horizontal model__center">
+        <section class="container__section model__vertical model__center">
+            <h1 class="container__title">Amigo Secreto</h1>
+
+            <div class="container__group">
+                <div class="container__layer">
+                    <input type="text" id="name-friend" name="name-friend" placeholder="Nome do amigo" class="container__input"/>
+                </div>
+            </div>
+
+            <div class="container__buttons model__horizontal model__center model__break">
+                <button onclick="addFriendSecret()" id="button-add" class="container__button container__button-blue">Adicionar</button>
+                <button onclick="drawSecretFriend()" id="button-draw" class="container__button container__button-orange" disabled>Sortear</button>
+                <button onclick="restartGame()" id="button-restart" class="container__button container__button-gray" disabled>Reiniciar</button>
+            </div>
+
+            <div class="container__messages model__vertical model__center" id="element-message-alert"></div>
+        </section>
+
+        <section class="container__section model__vertical model__center">
+            <div class="model__box model__vertical">
+                <h2 class="container__subtitle">Amigos adicionados</h2>
+
+                <div title="adicionado" class="friend__message model__vertical" id="element-add-friend"></div>
+            </div>
+
+            <div class="model__box model__vertical">
+                <h2 class="container__subtitle">Amigos sorteados</h2>
+
+                <div title="sorteado" class="friend__message model__vertical" id="element-draw-friend"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
