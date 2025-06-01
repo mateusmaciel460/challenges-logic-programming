@@ -21,7 +21,9 @@
 |Project Base|Number Secret|Random Number Generator|Rent Games|
 |------------|-------------|-----------------------|----------|
 |![Project Base](https://i.ibb.co/rRLbPDk7/project-base.png)|![Number Secret](https://i.ibb.co/NgKPHKMd/number-secret.png)|![Random Number Generator](https://i.ibb.co/chZ6Z5Fr/random-number-generator.png)|![Rent Games](https://i.ibb.co/21TcCW5W/rent-games.png)|
+
 |Shop Cart|Friend Secret|Ticket Purchase|
+|---------|-------------|---------------|
 |![Shop Cart](https://i.ibb.co/RkXmtzXS/shop-cart.png)|![Friend Secret](https://i.ibb.co/pr0VnC7B/friend-secret.png)|![Ticket Purchase](https://i.ibb.co/gLsWnsQP/ticket-purchase.png)|
 
 ## Meta
